@@ -1,0 +1,15 @@
+﻿@model FirstApp.Models.Employee
+@{
+    ViewBag.Title = Model.FirstName;
+}
+<h2>Employee @Model.FirstName</h2>
+<div>
+    <dl class="dl-horizontal">
+        <dt>id</dt>
+        <dd>@Model.Id</dd>
+
+        <dt>Years of stuff</dt>
+        <dd>@Model.YearsStuff</dd>
+    </dl>
+</div>
+

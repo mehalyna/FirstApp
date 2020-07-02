@@ -1,0 +1,21 @@
+﻿@model FirstApp.Models.Employee
+@{
+    ViewBag.Title = "Add employee";
+}
+    <form asp-action="create" asp-controller="home">
+        <div class="form-group">
+            <label asp-for="FirstName" class="control-label">First name</label>
+            <input type="text" asp-for="FirstName" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="LastName" class="control-label">Last name</label>
+            <input type="text" asp-for="LastName" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="YearsStuff" class="control-label">Years stuff</label>
+            <input type="text" asp-for="YearsStuff" class="form-control" />
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Send" class="btn btn-default" />
+        </div>
+    </form>
